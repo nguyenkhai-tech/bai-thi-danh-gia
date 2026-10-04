@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h2>Câu 1: Mảng và trung bình cộng các số chia hết cho 3</h2>
+    <label>Nhập số lượng phần tử:</label>
+    <input
+        type="number"
+        id="soLuong"
+        min="1"
+        max="50"
+    >
+    <button onclick="nhapMang()">
+        Nhập mảng
+    </button>
+    <div id="nhapPhanTu"></div>
+    <button onclick="xuLyMang()">
+        Xử lý mảng
+    </button>
+    <div id="ketQuaMang" class="ket-qua"></div>
+    <h2>Câu 2: Kiểm tra số hoàn hảo</h2>
+    <label>Nhập số nguyên dương:</label>
+    <input
+        type="number"
+        id="soNguyenDuong"
+    >
+    <button onclick="kiemTraSoHoanHao()">
+        Kiểm tra
+    </button>
+    <div id="ketQuaHoanHao" class="ket-qua"></div> 
+    <h2>Câu 3: Tính số ngày trong tháng / năm</h2>
+    <label for="thangNam">Nhập tháng/năm (định dạng MM/yyyy):</label>
+    <input 
+        type="text" 
+        id="thangNam" 
+        placeholder="Ví dụ: 02/2020"
+    >
+    <button onclick="xuLyTinhSoNgay()">Tính số ngày</button>
+    <div id="ketQua" class="ket-qua"></div>
+    <h2>Câu 4: Quản lý công nhân</h2>
+    <div class="container">
+        <h1>Quản lí công nhân</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Địa chỉ</th>
+                    <th>Lương</th>
+                    <th>Chức vụ</th>
+                </tr>
+            </thead>
+            <tbody id="workerTableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="cau1.js"></script>
+    <script src="cau2.js"></script>
+    <script src="cau3.js"></script>
+    <script src="cau4.js"></script>
+    </body>
+    </html>
